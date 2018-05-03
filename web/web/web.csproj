@@ -1,0 +1,405 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{561B4043-9071-4200-B0DB-D3C06EA4EF49}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>web</RootNamespace>
+    <AssemblyName>web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="addfacility.aspx" />
+    <Content Include="addpatient.aspx" />
+    <Content Include="adduser.aspx" />
+    <Content Include="adduserroles.aspx" />
+    <Content Include="alcoholscreening.aspx" />
+    <Content Include="allpatients.aspx" />
+    <Content Include="bloodpressurescreening.aspx" />
+    <Content Include="data.aspx" />
+    <Content Include="depressionscreening.aspx" />
+    <Content Include="gbvscreening.aspx" />
+    <Content Include="logout.aspx" />
+    <Content Include="menucontrol.ascx" />
+    <Content Include="patientmenucontrol.ascx" />
+    <Content Include="patientresults.aspx" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\custom.js" />
+    <Content Include="Scripts\datepicker\datepicker.common.js" />
+    <Content Include="Scripts\datepicker\datepicker.esm.js" />
+    <Content Include="Scripts\datepicker\datepicker.js" />
+    <Content Include="Scripts\datepicker\datepicker.min.js" />
+    <Content Include="Scripts\jquery.min.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="searchpatient.aspx" />
+    <Content Include="settings.aspx" />
+    <Content Include="Styles\arsfont.css" />
+    <Content Include="Styles\bootstrap.css" />
+    <Content Include="Styles\custom.css" />
+    <Content Include="Styles\datepicker\datepicker.css" />
+    <Content Include="Styles\datepicker\datepicker.min.css" />
+    <Content Include="Styles\fa\css\font-awesome.css" />
+    <Content Include="Styles\fa\css\font-awesome.min.css" />
+    <Content Include="Styles\fa\fonts\fontawesome-webfont.svg" />
+    <Content Include="Styles\fa\HELP-US-OUT.txt" />
+    <Content Include="Styles\fonts\arsfont.css" />
+    <Content Include="Styles\fonts\arsmaquettepro-black-webfont.svg" />
+    <Content Include="Styles\fonts\arsmaquettepro-blackitalic-webfont.svg" />
+    <Content Include="Styles\fonts\arsmaquettepro-bold-webfont.svg" />
+    <Content Include="Styles\fonts\arsmaquettepro-bolditalic-webfont.svg" />
+    <Content Include="Styles\fonts\arsmaquettepro-light-webfont.svg" />
+    <Content Include="Styles\fonts\arsmaquettepro-lightitalic-webfont.svg" />
+    <Content Include="Styles\fonts\arsmaquettepro-medium-webfont.svg" />
+    <Content Include="Styles\fonts\arsmaquettepro-mediumitalic-webfont.svg" />
+    <Content Include="Styles\fonts\arsmaquettepro-regular-webfont.svg" />
+    <Content Include="Styles\fonts\arsmaquettepro-regularitalic-webfont.svg" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="addfacility.aspx.cs">
+      <DependentUpon>addfacility.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="addfacility.aspx.designer.cs">
+      <DependentUpon>addfacility.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="addpatient.aspx.cs">
+      <DependentUpon>addpatient.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="addpatient.aspx.designer.cs">
+      <DependentUpon>addpatient.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adduser.aspx.cs">
+      <DependentUpon>adduser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adduser.aspx.designer.cs">
+      <DependentUpon>adduser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adduserroles.aspx.cs">
+      <DependentUpon>adduserroles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adduserroles.aspx.designer.cs">
+      <DependentUpon>adduserroles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="alcoholscreening.aspx.cs">
+      <DependentUpon>alcoholscreening.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="alcoholscreening.aspx.designer.cs">
+      <DependentUpon>alcoholscreening.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="allpatients.aspx.cs">
+      <DependentUpon>allpatients.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="allpatients.aspx.designer.cs">
+      <DependentUpon>allpatients.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bloodpressurescreening.aspx.cs">
+      <DependentUpon>bloodpressurescreening.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bloodpressurescreening.aspx.designer.cs">
+      <DependentUpon>bloodpressurescreening.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\userdal.cs" />
+    <Compile Include="data.aspx.cs">
+      <DependentUpon>data.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="data.aspx.designer.cs">
+      <DependentUpon>data.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="database.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="depressionscreening.aspx.cs">
+      <DependentUpon>depressionscreening.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="depressionscreening.aspx.designer.cs">
+      <DependentUpon>depressionscreening.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gbvscreening.aspx.cs">
+      <DependentUpon>gbvscreening.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gbvscreening.aspx.designer.cs">
+      <DependentUpon>gbvscreening.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="logout.aspx.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="logout.aspx.designer.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="menucontrol.ascx.cs">
+      <DependentUpon>menucontrol.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="menucontrol.ascx.designer.cs">
+      <DependentUpon>menucontrol.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="patientmenucontrol.ascx.cs">
+      <DependentUpon>patientmenucontrol.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="patientmenucontrol.ascx.designer.cs">
+      <DependentUpon>patientmenucontrol.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="patientresults.aspx.cs">
+      <DependentUpon>patientresults.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="patientresults.aspx.designer.cs">
+      <DependentUpon>patientresults.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="searchpatient.aspx.cs">
+      <DependentUpon>searchpatient.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="searchpatient.aspx.designer.cs">
+      <DependentUpon>searchpatient.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="settings.aspx.cs">
+      <DependentUpon>settings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="settings.aspx.designer.cs">
+      <DependentUpon>settings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Styles\fa\fonts\fontawesome-webfont.eot" />
+    <None Include="Styles\fa\fonts\fontawesome-webfont.ttf" />
+    <None Include="Styles\fa\fonts\fontawesome-webfont.woff" />
+    <None Include="Styles\fa\fonts\fontawesome-webfont.woff2" />
+    <None Include="Styles\fa\fonts\FontAwesome.otf" />
+    <None Include="Styles\fa\less\animated.less" />
+    <None Include="Styles\fa\less\bordered-pulled.less" />
+    <None Include="Styles\fa\less\core.less" />
+    <None Include="Styles\fa\less\fixed-width.less" />
+    <None Include="Styles\fa\less\font-awesome.less" />
+    <None Include="Styles\fa\less\icons.less" />
+    <None Include="Styles\fa\less\larger.less" />
+    <None Include="Styles\fa\less\list.less" />
+    <None Include="Styles\fa\less\mixins.less" />
+    <None Include="Styles\fa\less\path.less" />
+    <None Include="Styles\fa\less\rotated-flipped.less" />
+    <None Include="Styles\fa\less\screen-reader.less" />
+    <None Include="Styles\fa\less\stacked.less" />
+    <None Include="Styles\fa\less\variables.less" />
+    <None Include="Styles\fa\scss\font-awesome.scss" />
+    <None Include="Styles\fa\scss\_animated.scss" />
+    <None Include="Styles\fa\scss\_bordered-pulled.scss" />
+    <None Include="Styles\fa\scss\_core.scss" />
+    <None Include="Styles\fa\scss\_fixed-width.scss" />
+    <None Include="Styles\fa\scss\_icons.scss" />
+    <None Include="Styles\fa\scss\_larger.scss" />
+    <None Include="Styles\fa\scss\_list.scss" />
+    <None Include="Styles\fa\scss\_mixins.scss" />
+    <None Include="Styles\fa\scss\_path.scss" />
+    <None Include="Styles\fa\scss\_rotated-flipped.scss" />
+    <None Include="Styles\fa\scss\_screen-reader.scss" />
+    <None Include="Styles\fa\scss\_stacked.scss" />
+    <None Include="Styles\fa\scss\_variables.scss" />
+    <None Include="Styles\fonts\arsmaquettepro-black-webfont %281%29.eot" />
+    <None Include="Styles\fonts\arsmaquettepro-black-webfont.eot" />
+    <None Include="Styles\fonts\arsmaquettepro-black-webfont.ttf" />
+    <None Include="Styles\fonts\arsmaquettepro-black-webfont.woff" />
+    <None Include="Styles\fonts\arsmaquettepro-black-webfont.woff2" />
+    <None Include="Styles\fonts\arsmaquettepro-blackitalic-webfont %281%29.eot" />
+    <None Include="Styles\fonts\arsmaquettepro-blackitalic-webfont.eot" />
+    <None Include="Styles\fonts\arsmaquettepro-blackitalic-webfont.ttf" />
+    <None Include="Styles\fonts\arsmaquettepro-blackitalic-webfont.woff" />
+    <None Include="Styles\fonts\arsmaquettepro-blackitalic-webfont.woff2" />
+    <None Include="Styles\fonts\arsmaquettepro-bold-webfont %281%29.eot" />
+    <None Include="Styles\fonts\arsmaquettepro-bold-webfont.eot" />
+    <None Include="Styles\fonts\arsmaquettepro-bold-webfont.ttf" />
+    <None Include="Styles\fonts\arsmaquettepro-bold-webfont.woff" />
+    <None Include="Styles\fonts\arsmaquettepro-bold-webfont.woff2" />
+    <None Include="Styles\fonts\arsmaquettepro-bolditalic-webfont %281%29.eot" />
+    <None Include="Styles\fonts\arsmaquettepro-bolditalic-webfont.eot" />
+    <None Include="Styles\fonts\arsmaquettepro-bolditalic-webfont.ttf" />
+    <None Include="Styles\fonts\arsmaquettepro-bolditalic-webfont.woff" />
+    <None Include="Styles\fonts\arsmaquettepro-bolditalic-webfont.woff2" />
+    <None Include="Styles\fonts\arsmaquettepro-light-webfont %281%29.eot" />
+    <None Include="Styles\fonts\arsmaquettepro-light-webfont.eot" />
+    <None Include="Styles\fonts\arsmaquettepro-light-webfont.ttf" />
+    <None Include="Styles\fonts\arsmaquettepro-light-webfont.woff" />
+    <None Include="Styles\fonts\arsmaquettepro-light-webfont.woff2" />
+    <None Include="Styles\fonts\arsmaquettepro-lightitalic-webfont %281%29.eot" />
+    <None Include="Styles\fonts\arsmaquettepro-lightitalic-webfont.eot" />
+    <None Include="Styles\fonts\arsmaquettepro-lightitalic-webfont.ttf" />
+    <None Include="Styles\fonts\arsmaquettepro-lightitalic-webfont.woff" />
+    <None Include="Styles\fonts\arsmaquettepro-lightitalic-webfont.woff2" />
+    <None Include="Styles\fonts\arsmaquettepro-medium-webfont %281%29.eot" />
+    <None Include="Styles\fonts\arsmaquettepro-medium-webfont.eot" />
+    <None Include="Styles\fonts\arsmaquettepro-medium-webfont.ttf" />
+    <None Include="Styles\fonts\arsmaquettepro-medium-webfont.woff" />
+    <None Include="Styles\fonts\arsmaquettepro-medium-webfont.woff2" />
+    <None Include="Styles\fonts\arsmaquettepro-mediumitalic-webfont %281%29.eot" />
+    <None Include="Styles\fonts\arsmaquettepro-mediumitalic-webfont.eot" />
+    <None Include="Styles\fonts\arsmaquettepro-mediumitalic-webfont.ttf" />
+    <None Include="Styles\fonts\arsmaquettepro-mediumitalic-webfont.woff" />
+    <None Include="Styles\fonts\arsmaquettepro-mediumitalic-webfont.woff2" />
+    <None Include="Styles\fonts\arsmaquettepro-regular-webfont %281%29.eot" />
+    <None Include="Styles\fonts\arsmaquettepro-regular-webfont.eot" />
+    <None Include="Styles\fonts\arsmaquettepro-regular-webfont.ttf" />
+    <None Include="Styles\fonts\arsmaquettepro-regular-webfont.woff" />
+    <None Include="Styles\fonts\arsmaquettepro-regular-webfont.woff2" />
+    <None Include="Styles\fonts\arsmaquettepro-regularitalic-webfont %281%29.eot" />
+    <None Include="Styles\fonts\arsmaquettepro-regularitalic-webfont.eot" />
+    <None Include="Styles\fonts\arsmaquettepro-regularitalic-webfont.ttf" />
+    <None Include="Styles\fonts\arsmaquettepro-regularitalic-webfont.woff" />
+    <None Include="Styles\fonts\arsmaquettepro-regularitalic-webfont.woff2" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2944</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

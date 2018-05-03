@@ -1,0 +1,4 @@
+c:\users\judy\documents\visual studio 2010\Projects\web\web\bin\web.dll
+c:\users\judy\documents\visual studio 2010\Projects\web\web\bin\web.pdb
+c:\users\judy\documents\visual studio 2010\Projects\web\web\obj\Debug\web.dll
+c:\users\judy\documents\visual studio 2010\Projects\web\web\obj\Debug\web.pdb

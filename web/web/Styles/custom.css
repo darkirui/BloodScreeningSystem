@@ -1,0 +1,40 @@
+﻿body{font-family:ars_maquette_prolight; }
+.content-wrap{width: 80%;margin-right: auto;margin-left: auto;}
+.main-content{min-height: 400px;}
+h2{color: #B20000;font-size: 16px;}
+.top-title-section h2{font-weight: 700;}
+.top-visit-date label{color: #B20000;}
+
+/*** master page ***/
+.header-top{background: #D8D8D8;}
+.system-logo{float: left;}
+.taskbar{float: right;padding-top: 25px;}
+.header-bottom{background: #f8f8f8;}
+.navbar{border: 0px;margin-bottom: 0px;}
+.navbar-default{border: 0px;border-color: #f8f8f8;}
+.taskbar a{margin-right: 10px;margin-left: 10px;font-size: 20px;}
+.taskbar a:last-child{margin-right: 0px;}
+.page{-webkit-box-shadow: inset 0 20px 20px -20px rgba(0,0,0,0.4);-moz-box-shadow: inset 0 20px 20px -20px rgba(0,0,0,0.4);box-shadow: inset 0 20px 20px -20px rgba(0,0,0,0.4);margin-top: 0px;padding-top: 30px;padding-bottom: 30px;}
+.footer-bottom{padding-top: 30px;padding-bottom: 30px;color: #fff;background: #232E32;}
+ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;    
+}
+
+/** home page ***/
+.form-wrap{width: 40%;margin-right: auto;margin-left: auto;}
+.form-control{border-radius: 0px;}
+#circwrap, #edotherwrap, #substancewrap{display: none;}
+.error{color: Red;font-size: 9px;}
+.login-container{width: 40%;margin-right: auto;margin-left: auto;}
+
+/*** add patient **/
+.top-content-section{display: table;width: 100%;border-bottom: 1px solid #B20000;margin-bottom: 10px;}
+.top-title-section, .top-visit-date{display: table-cell;vertical-align: middle;width: 50%;}
+.form-row{display: table;width: 100%;}
+.form-row .form-group{display: table-cell;width: 50%;padding-bottom: 10px;}
+.form-group:nth-child(2){padding-left: 5px;}
+.form-group:nth-child(1){padding-right: 5px;}
+
+/***screening pages ***/
+.patient-details-wrap{display: table;width: 100%;margin-bottom: 10px;}
+.patient-detail{display: table-cell;width: 25%;}
